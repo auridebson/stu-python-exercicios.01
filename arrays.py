@@ -17,3 +17,5 @@ familia = {
 }
 
 frutas = []
+
+alunos = []

@@ -9,14 +9,36 @@
 import random
 from arrays import *
 
+# ln(40)
+# print("Alimente uma lista de frutas\nAdicione uma fruta por vez e para sair digite SAIR.")
+# ln(40)
+
+# while True:
+#     entrada = input("Digite um fruta: ")
+#     if entrada == "sair":
+#         break
+#     else:
+#         frutas.append(entrada)
+
+# ln(30)
+# for indice, fruta in enumerate(frutas):
+#     print(f"{indice+1}ª Fruta - {fruta}")
+# ln(30)
+
+
 while True:
-    entrada = input("Digite um fruta: ")
+    entrada = input("Digite o nome do aluno: ")
     if entrada == "sair":
         break
     else:
-        frutas.append(entrada)
+        nota = input(f"Digite a note de {entrada}: ")
+        alunos.append([entrada, nota])
+
+# ---------------------------------
+maxNota = 0
+for aluno in alunos:
+    maxNota += int(aluno[1])
 
 ln(30)
-
-for fruta in frutas:
-    print(fruta)
+print(alunos, maxNota)
+ln(30)
