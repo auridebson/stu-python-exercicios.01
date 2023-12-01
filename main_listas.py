@@ -27,18 +27,23 @@ from arrays import *
 
 
 while True:
-    entrada = input("Digite o nome do aluno: ")
-    if entrada == "sair":
+    aluno = str(input("Digite o nome do aluno: "))
+    if aluno == "sair":
         break
     else:
-        nota = input(f"Digite a note de {entrada}: ")
-        alunos.append([entrada, nota])
+        nota = float(input(f"Digite a nota de {aluno}: "))
+        alunos.append([aluno, nota])
 
 # ---------------------------------
 maxNota = 0
-for aluno in alunos:
-    maxNota += int(aluno[1])
+nomeAluno = ""
+
+for item_atual in alunos:
+    if aluno[1] > float(maxNota):
+        maxNota = float(item_atual[1])
+        nomeAluno = str(item_atual[0])
+
 
 ln(30)
-print(alunos, maxNota)
+print(nomeAluno, maxNota)
 ln(30)
