@@ -8,18 +8,15 @@
 
 import random
 from arrays import *
-print(num1a10)
 
-num1a10.append(11)
-print(num1a10)
+while True:
+    entrada = input("Digite um fruta: ")
+    if entrada == "sair":
+        break
+    else:
+        frutas.append(entrada)
 
-num1a10.remove(5)
-print(num1a10)
+ln(30)
 
-lista3 = num1a10+lista2
-print(lista3)
-
-for item in lista3:
-    if item%2==0:
-        listaPares.append(item)
-print(listaPares)
+for fruta in frutas:
+    print(fruta)

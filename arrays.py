@@ -15,3 +15,5 @@ familia = {
     "guilherme":2008,
     "tobby": 2010
 }
+
+frutas = []
