@@ -25,25 +25,21 @@ from arrays import *
 #     print(f"{indice+1}ª Fruta - {fruta}")
 # ln(30)
 
+    # "nome":"",
+    # "cor":"",
+    # "raca":"",
+    # "adestrado":False,
+    # "idade":"",
 
-while True:
-    aluno = str(input("Digite o nome do aluno: "))
-    if aluno == "sair":
-        break
-    else:
-        nota = float(input(f"Digite a nota de {aluno}: "))
-        alunos.append([aluno, nota])
+nome = input("Digite o nome do gato: ")
+gato["nome"] = nome
+gato["cor"] = str(input(f"Digite a cor do gato {nome}: "))
+gato["raca"] = input(f"Digite a raça do {nome}: ")
+gato["idade"] = int(input(f"Digite a idade de {nome}: "))
+gato["vacinado"] = bool(input("Vacinado? "))
 
-# ---------------------------------
-maxNota = 0
-nomeAluno = ""
-
-for item_atual in alunos:
-    if aluno[1] > float(maxNota):
-        maxNota = float(item_atual[1])
-        nomeAluno = str(item_atual[0])
-
+print(gato)
 
 ln(30)
-print(nomeAluno, maxNota)
+print(" - ")
 ln(30)
