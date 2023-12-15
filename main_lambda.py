@@ -1,3 +1,14 @@
-quadrado = lambda numero : numero ** 2
+# frase = lambda texto : texto.lower()
 
-print(quadrado(4))
+# minhaFrase = input("Digite seu texto: ")
+
+# print(frase(minhaFrase))
+
+# -----------------------------------
+
+# menu = int(input("Escolha uma opção para fazer os cálculos:\n[1] - Soma\n[2] - Subtração\n[3] - Multiplicação\n[4] - Divisão\n[5] - Potencialização\n"))
+
+entrada = int(input("Digite um número inteiro: "))
+numero = lambda entrada : "Número par" if (entrada % 2 == 0) else "Número ímpar"
+
+print(numero)
